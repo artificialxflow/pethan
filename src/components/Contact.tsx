@@ -31,7 +31,7 @@ const Contact = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-              Get In <span className="text-primary-500">Touch</span>
+              Get In <span className="bg-gradient-to-r from-primary-600 to-persian-600 bg-clip-text text-transparent">Touch</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Ready to discuss your PET product needs? Contact us today for quotes, specifications, or any questions about our products.
@@ -46,12 +46,12 @@ const Contact = () => {
                 <div className="space-y-6">
                   {/* Phone */}
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-primary-500" />
+                    <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
+                      <Phone className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-800">Phone</h4>
-                      <a href="tel:+989214843361" className="text-gray-600 hover:text-primary-500 transition-colors">
+                      <a href="tel:+989214843361" className="text-gray-600 hover:text-primary-600 transition-colors">
                         +98 921 484 3361
                       </a>
                     </div>
@@ -59,12 +59,12 @@ const Contact = () => {
 
                   {/* Email */}
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-persian-100 rounded-full flex items-center justify-center">
-                      <Mail className="w-6 h-6 text-persian-500" />
+                    <div className="w-12 h-12 bg-gradient-to-br from-persian-500 to-persian-600 rounded-full flex items-center justify-center">
+                      <Mail className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-800">Email</h4>
-                      <a href="mailto:sales@madebypersians.ir" className="text-gray-600 hover:text-persian-500 transition-colors">
+                      <a href="mailto:sales@madebypersians.ir" className="text-gray-600 hover:text-persian-600 transition-colors">
                         sales@madebypersians.ir
                       </a>
                     </div>
@@ -72,8 +72,8 @@ const Contact = () => {
 
                   {/* WhatsApp */}
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                      <MessageCircle className="w-6 h-6 text-green-500" />
+                    <div className="w-12 h-12 bg-gradient-to-br from-accent-500 to-accent-600 rounded-full flex items-center justify-center">
+                      <MessageCircle className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-800">WhatsApp</h4>
@@ -81,7 +81,7 @@ const Contact = () => {
                         href="https://wa.me/989214843361" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-gray-600 hover:text-green-500 transition-colors"
+                        className="text-gray-600 hover:text-accent-600 transition-colors"
                       >
                         +98 921 484 3361
                       </a>
@@ -90,8 +90,8 @@ const Contact = () => {
 
                   {/* Location */}
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-gray-500" />
+                    <div className="w-12 h-12 bg-gradient-to-br from-gray-500 to-gray-600 rounded-full flex items-center justify-center">
+                      <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-800">Location</h4>
@@ -102,28 +102,28 @@ const Contact = () => {
               </div>
 
               {/* Quick Actions */}
-              <div className="bg-gradient-to-r from-primary-50 to-persian-50 rounded-lg p-6">
+              <div className="bg-gradient-to-br from-primary-50 to-persian-50 rounded-xl p-6 border border-primary-100">
                 <h4 className="text-xl font-bold text-gray-800 mb-4">Quick Actions</h4>
                 <div className="space-y-3">
                   <a 
                     href="https://wa.me/989214843361?text=Hello, I'm interested in your PET products. Could you please provide more information?"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-3 bg-green-500 text-white px-4 py-3 rounded-lg hover:bg-green-600 transition-colors"
+                    className="flex items-center space-x-3 bg-gradient-to-r from-accent-500 to-accent-600 text-white px-4 py-3 rounded-lg hover:from-accent-600 hover:to-accent-700 transition-all duration-300 shadow-lg"
                   >
                     <MessageCircle className="w-5 h-5" />
                     <span>Chat on WhatsApp</span>
                   </a>
                   <a 
                     href="mailto:sales@madebypersians.ir?subject=Product Inquiry&body=Hello, I'm interested in learning more about your PET products."
-                    className="flex items-center space-x-3 bg-primary-500 text-white px-4 py-3 rounded-lg hover:bg-primary-600 transition-colors"
+                    className="flex items-center space-x-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white px-4 py-3 rounded-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg"
                   >
                     <Mail className="w-5 h-5" />
                     <span>Send Email</span>
                   </a>
                   <a 
                     href="tel:+989214843361"
-                    className="flex items-center space-x-3 bg-persian-500 text-white px-4 py-3 rounded-lg hover:bg-persian-600 transition-colors"
+                    className="flex items-center space-x-3 bg-gradient-to-r from-persian-500 to-persian-600 text-white px-4 py-3 rounded-lg hover:from-persian-600 hover:to-persian-700 transition-all duration-300 shadow-lg"
                   >
                     <Phone className="w-5 h-5" />
                     <span>Call Now</span>
@@ -133,7 +133,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-gray-50 rounded-lg p-8">
+            <div className="bg-gradient-to-br from-gray-50 to-primary-50 rounded-xl p-8 border border-primary-100">
               <h3 className="text-2xl font-bold text-gray-800 mb-6">Send us a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -224,7 +224,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-primary-500 to-persian-500 text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2"
+                  className="w-full bg-gradient-to-r from-primary-500 to-persian-500 hover:from-primary-600 hover:to-persian-600 text-white py-3 px-6 rounded-lg font-semibold hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2"
                 >
                   <Send className="w-5 h-5" />
                   <span>Send Message</span>

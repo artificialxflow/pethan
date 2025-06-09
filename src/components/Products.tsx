@@ -62,7 +62,7 @@ const Products = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-              Our <span className="text-primary-500">Products</span>
+              Our <span className="bg-gradient-to-r from-primary-600 to-persian-600 bg-clip-text text-transparent">Products</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               Comprehensive catalog of premium PET bottles and jars manufactured to the highest international standards.
@@ -74,8 +74,8 @@ const Products = () => {
                 onClick={() => setActiveCategory('bottles')}
                 className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
                   activeCategory === 'bottles'
-                    ? 'bg-primary-500 text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-xl'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-lg'
                 }`}
               >
                 <Package className="w-5 h-5 inline-block mr-2" />
@@ -85,8 +85,8 @@ const Products = () => {
                 onClick={() => setActiveCategory('jars')}
                 className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
                   activeCategory === 'jars'
-                    ? 'bg-primary-500 text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    ? 'bg-gradient-to-r from-persian-500 to-persian-600 text-white shadow-xl'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-lg'
                 }`}
               >
                 <Droplets className="w-5 h-5 inline-block mr-2" />
@@ -109,14 +109,14 @@ const Products = () => {
             {/* Products Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {productCategories[activeCategory].products.map((product, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover-lift">
+                <div key={index} className="bg-white rounded-xl shadow-xl overflow-hidden hover-lift border border-gray-100">
                   <div className="relative">
                     <img
                       src={product.image}
                       alt={product.name}
                       className="w-full h-48 object-cover"
                     />
-                    <div className="absolute top-4 right-4 bg-primary-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    <div className="absolute top-4 right-4 bg-gradient-to-r from-gold-500 to-gold-600 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
                       Premium
                     </div>
                   </div>
@@ -129,7 +129,7 @@ const Products = () => {
                       <h5 className="text-sm font-semibold text-gray-600 mb-2">Available Sizes:</h5>
                       <div className="flex flex-wrap gap-2">
                         {product.sizes.map((size, sizeIndex) => (
-                          <span key={sizeIndex} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                          <span key={sizeIndex} className="bg-gradient-to-r from-primary-50 to-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">
                             {size}
                           </span>
                         ))}
@@ -142,14 +142,14 @@ const Products = () => {
                       <ul className="space-y-1">
                         {product.features.map((feature, featureIndex) => (
                           <li key={featureIndex} className="flex items-center text-sm text-gray-600">
-                            <Star className="w-4 h-4 text-persian-500 mr-2" />
+                            <Star className="w-4 h-4 text-gold-500 mr-2" />
                             {feature}
                           </li>
                         ))}
                       </ul>
                     </div>
                     
-                    <button className="w-full bg-gradient-to-r from-primary-500 to-persian-500 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
+                    <button className="w-full bg-gradient-to-r from-primary-500 to-persian-500 hover:from-primary-600 hover:to-persian-600 text-white py-3 rounded-lg font-semibold hover:shadow-xl transition-all duration-300">
                       Request Quote
                     </button>
                   </div>
@@ -159,26 +159,26 @@ const Products = () => {
           </div>
 
           {/* Quality Features */}
-          <div className="bg-gradient-to-r from-primary-50 to-persian-50 rounded-lg p-8">
+          <div className="bg-gradient-to-br from-primary-50 via-white to-persian-50 rounded-xl p-8 border border-primary-100 shadow-xl">
             <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Why Choose Our PET Products?</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="text-center">
-                <Shield className="w-12 h-12 text-primary-500 mx-auto mb-4" />
+              <div className="text-center bg-white rounded-lg p-6 shadow-lg hover-lift border border-primary-100">
+                <Shield className="w-12 h-12 text-primary-600 mx-auto mb-4" />
                 <h4 className="font-semibold text-gray-800 mb-2">Food Grade Safety</h4>
                 <p className="text-sm text-gray-600">All products meet international food safety standards</p>
               </div>
-              <div className="text-center">
-                <Package className="w-12 h-12 text-persian-500 mx-auto mb-4" />
+              <div className="text-center bg-white rounded-lg p-6 shadow-lg hover-lift border border-accent-100">
+                <Package className="w-12 h-12 text-accent-600 mx-auto mb-4" />
                 <h4 className="font-semibold text-gray-800 mb-2">Durable Design</h4>
                 <p className="text-sm text-gray-600">Built to withstand daily use and transportation</p>
               </div>
-              <div className="text-center">
-                <Droplets className="w-12 h-12 text-green-500 mx-auto mb-4" />
+              <div className="text-center bg-white rounded-lg p-6 shadow-lg hover-lift border border-persian-100">
+                <Droplets className="w-12 h-12 text-persian-600 mx-auto mb-4" />
                 <h4 className="font-semibold text-gray-800 mb-2">Eco-Friendly</h4>
                 <p className="text-sm text-gray-600">100% recyclable and environmentally conscious</p>
               </div>
-              <div className="text-center">
-                <Star className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
+              <div className="text-center bg-white rounded-lg p-6 shadow-lg hover-lift border border-gold-100">
+                <Star className="w-12 h-12 text-gold-600 mx-auto mb-4" />
                 <h4 className="font-semibold text-gray-800 mb-2">Premium Quality</h4>
                 <p className="text-sm text-gray-600">ISO certified manufacturing processes</p>
               </div>

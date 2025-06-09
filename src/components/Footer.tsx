@@ -3,7 +3,7 @@ import { Phone, Mail, MessageCircle, Award, Shield } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -25,12 +25,12 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex space-x-4">
-                <div className="flex items-center space-x-2 bg-gray-800 px-3 py-2 rounded-lg">
-                  <Award className="w-5 h-5 text-primary-400" />
+                <div className="flex items-center space-x-2 bg-gradient-to-r from-primary-600 to-primary-700 px-3 py-2 rounded-lg">
+                  <Award className="w-5 h-5 text-gold-400" />
                   <span className="text-sm">ISO 22000</span>
                 </div>
-                <div className="flex items-center space-x-2 bg-gray-800 px-3 py-2 rounded-lg">
-                  <Shield className="w-5 h-5 text-persian-400" />
+                <div className="flex items-center space-x-2 bg-gradient-to-r from-persian-600 to-persian-700 px-3 py-2 rounded-lg">
+                  <Shield className="w-5 h-5 text-gold-400" />
                   <span className="text-sm">ISO 9001</span>
                 </div>
               </div>
@@ -97,7 +97,7 @@ const Footer = () => {
                   href="https://wa.me/989214843361" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors"
+                  className="flex items-center space-x-3 text-gray-300 hover:text-accent-400 transition-colors"
                 >
                   <MessageCircle className="w-5 h-5" />
                   <span>WhatsApp</span>
@@ -110,7 +110,7 @@ const Footer = () => {
                   href="https://wa.me/989214843361?text=Hello, I'm interested in your PET products. Could you please provide more information?"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-primary-500 to-persian-500 text-white px-4 py-2 rounded-lg hover:shadow-lg transition-all duration-300"
+                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-primary-500 to-persian-500 hover:from-primary-600 hover:to-persian-600 text-white px-4 py-2 rounded-lg hover:shadow-lg transition-all duration-300"
                 >
                   <MessageCircle className="w-4 h-4" />
                   <span className="text-sm font-semibold">Get Quote</span>
@@ -120,7 +120,7 @@ const Footer = () => {
           </div>
 
           {/* Bottom Bar */}
-          <div className="border-t border-gray-800 mt-12 pt-8">
+          <div className="border-t border-gray-700 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-gray-400 text-sm">
                 © 2024 MadeByPersians.ir. All rights reserved.
